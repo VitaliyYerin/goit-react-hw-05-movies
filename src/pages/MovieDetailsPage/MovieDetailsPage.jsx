@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import api from '../services/MovieAPI';
 import { toast } from 'react-toastify';
 import {
+  MovieWrapper,
   AdditionalInformation,
   ButtonGoBack,
   FilmInfo,
@@ -35,7 +36,7 @@ const MovieDetailsPage = () => {
   };
 
   return (
-    <div>
+    <MovieWrapper>
       {movie && (
         <>
           <ButtonGoBack type="button" onClick={onGoBack}>
@@ -75,7 +76,7 @@ const MovieDetailsPage = () => {
           <Outlet context={movieId} />
         </>
       )}
-    </div>
+    </MovieWrapper>
   );
 };
 
