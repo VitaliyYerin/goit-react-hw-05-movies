@@ -1,51 +1,51 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
+export const MovieWrapper = styled.div`
+  margin-left: auto;
+  margin-right: auto;
+  width: 1560px;
+  max-width: 98%;
+  padding: 2em 0;
+`;
+
 export const MovieContainer = styled.div`
   display: flex;
   align-items: flex-start;
-  max-width: 1400px;
-  margin: 0px auto;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  width: 100%;
+  padding: 2em 0;
 `;
 
 export const FilmInfo = styled.div`
   padding: 20px;
-  margin: 0 0 0 100px;
-  background-color: rgba(0, 0, 0, 0.3);
+  margin: 0 0 0 50px;
+  background-color: rgba(0, 0, 0, 0.5);
   height: auto;
   border-radius: 10px;
+  color: #fff;
 `;
 
 export const MovieImg = styled.img`
-  margin-left: 50px;
   border-radius: 10px;
 `;
 
 export const AdditionalInformation = styled.div`
-  margin-left: 50px;
-  margin-bottom: 50px;
-  padding: 20px;
-  margin-right: 100px;
-  height: 80px;
-  background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
+  text-align: center;
+  color: #fff;
 `;
 
 export const StyledLink = styled(NavLink)`
-  text-decoration: none;
   font-size: 24px;
   font-weight: 700;
-  margin-right: 121px;
-  color: #5c0080;
+  color: #fff;
+  text-decoration: none;
   &.active {
     color: brown;
-    text-decoration: underline;
   }
   &:hover:not(.active) {
-    color: rgb(181, 198, 236);
+    text-decoration: underline;
+  }
+  &:last-child {
+    margin-left: 20px;
   }
 `;
 
@@ -63,8 +63,6 @@ export const Nav = styled.nav`
 
 export const ButtonGoBack = styled.button`
   display: inline-block;
-  margin-left: 50px;
-  margin-top: 10px;
   font-weight: 400;
   text-align: center;
   white-space: nowrap;
@@ -73,7 +71,6 @@ export const ButtonGoBack = styled.button`
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  border: 1px solid transparent;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   line-height: 1.5;
@@ -81,11 +78,9 @@ export const ButtonGoBack = styled.button`
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   color: #fff;
-  background-color: #6c757d;
-  border-color: #6c757d;
+  background-color: red;
   &:hover {
-    background-color: #b5bbc0;
-    border-color: #b5bbc0;
+    background-color: #fff;
     color: black;
   }
 `;
