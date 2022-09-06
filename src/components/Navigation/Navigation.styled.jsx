@@ -16,10 +16,15 @@ color: #fff;
 `;
 
 export const Container = styled.ul`
-                         display: flex;
+  display: flex;
 `;
 
 export const Nav = styled.nav`
-                   padding: 20px 30px;
+  padding: 20px 30px;
   box-shadow: 0px 15px 10px -15px red;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
 `;
